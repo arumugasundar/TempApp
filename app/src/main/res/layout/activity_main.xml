@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_fahrenheit_temp_below"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/fahrenheit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Celsius"
+        android:hint="@string/fahrenheit"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_celsius_temp_below"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/celsius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Celsius"
+        android:hint="@string/celsius"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_gravity="end"
+        android:onClick="convertTemp"
+        android:text="@string/convert_temp"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:textSize="26sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
